@@ -3,6 +3,7 @@ body {
     background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
     font-family: 'Archivo', sans-serif;
     color:antiquewhite;
+    min-height: 100vh;
 }
 
 .textContainer {
@@ -17,7 +18,7 @@ body {
     border: 1px solid black;
     border-radius: 4px;
     display: grid;
-    height: 300px;
+    height: 700px;
     width: 50%;
     margin: auto;
     background-color: blanchedalmond;
@@ -34,6 +35,8 @@ button {
     background-color: cornflowerblue;
     border: 1px solid black;
     border-radius: 3px;
+    justify-content: center;
+    align-items: center;
 }
 
 button:hover {
