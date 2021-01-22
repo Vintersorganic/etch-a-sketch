@@ -20,9 +20,32 @@ body {
     height: 300px;
     width: 50%;
     margin: auto;
+    background-color: blanchedalmond;
+    
 }
 
 .col {
     background-color: #fff;
-    border: 0.3px solid rgba(0, 0, 0,0.1);
+    border: 0.1px solid rgba(0, 0, 0,0.1);
+}
+
+button {
+    color: cornsilk;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+input {
+    background-color: white;
+    width: 3em;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+
+
+
 }

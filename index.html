@@ -19,7 +19,14 @@
             <h1>Etch A Sketch!</h1>
             <p>Choose the grid size (between 4 and 100) and click Start. Reset, otherwise.</p>
             <div class="buttons">
-                <input type="number" id="myNumber" value="4" min="4" max="100">
+                <input
+                    type="text"
+                    name="myNumber"
+                    id="myNumber"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                    autocomplete="one-time-code"
+                    />
                 <button type="submit" id="enter">Enter</button>
                 <button>Reset</button>
             </div>

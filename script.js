@@ -22,6 +22,15 @@ function setGridSize(num){
 
 
  
+let color = [, "#3C9EE7", "#E7993C",  
+        "#E73C99", "#3CE746", "#E7993C"]; 
+  
+    document.getElementById("container").addEventListener( 
+            "mouseenter", function () { 
+                  
+        document.querySelector(".col").style.background  
+            = color[Math.floor(Math.random() * color.length)]; 
+    }) 
 
 // function mouseOver() {
 //     document.querySelector(".col").style.color = "blue";
