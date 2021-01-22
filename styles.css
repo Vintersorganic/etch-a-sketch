@@ -1,6 +1,11 @@
+body {
+    background: rgb(131,58,180);
+    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+    font-family: 'Archivo', sans-serif;
+    color:antiquewhite;
+}
+
 .textContainer {
-    border: 1px solid black;
-    border-radius: 7px;
     display: flex;   
     flex-direction: column;
     text-align: center;
@@ -19,5 +24,5 @@
 
 .col {
     background-color: #fff;
-    border: 0.3px solid black;
+    border: 0.3px solid rgba(0, 0, 0,0.1);
 }

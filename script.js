@@ -1,19 +1,18 @@
-function gridCreation(num){
-  
+function gridCreation(){
+    let inputNumber = document.getElementById("myNumber").value
     let $container = document.querySelector(".container");
     let $div 
-    let totalSquares = num*num;
+    let totalSquares = inputNumber*inputNumber;
     for (i=0; i<totalSquares; i++) {
         $div = document.createElement('div');
         $div.classList.add("col");
         $container.appendChild($div)
     }
-    setGridSize(num)
+    setGridSize(inputNumber)
     
 }
 
-let userNumber = Number(prompt("Enter a number between 4 and 100", "i.e: 16"));
-gridCreation(userNumber);
+document.getElementById("enter").addEventListener("click", gridCreation);
 
 function setGridSize(num){
     document.getElementById("container").style.gridTemplateColumns = `repeat(${num}, 1fr)`;
