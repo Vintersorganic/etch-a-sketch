@@ -1,0 +1,23 @@
+.textContainer {
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;   
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 4px;
+    display: grid;
+    height: 300px;
+    width: 50%;
+    margin: auto;
+}
+
+.col {
+    background-color: #fff;
+    border: 0.3px solid black;
+}
