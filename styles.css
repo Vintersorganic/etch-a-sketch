@@ -60,5 +60,9 @@ input {
 
 .buttons {
     font-weight: bolder;
+}
 
+.eraser {
+    background-color: white;
+    color: black;
 }

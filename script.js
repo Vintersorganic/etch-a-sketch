@@ -25,6 +25,8 @@ document.getElementById("enter").addEventListener("click", gridCreation);
 document.getElementById("reset").addEventListener("click", gridReset);
 document.getElementById("black").addEventListener("click", blackColor);
 document.getElementById("randomColor").addEventListener("click", colorChange);
+document.getElementById("eraser").addEventListener("click", eraserColor);
+
 
 
 function setGridSize(num){
@@ -64,6 +66,17 @@ function blackColor() {
 });
 }
 
+function eraserColor(){
+
+let squares = document.querySelectorAll(".col");
+    squares.forEach((square) => {
+
+
+    square.addEventListener('mouseover', () => {
+    square.style.background = "white";
+});
+});
+}
 
 
   
