@@ -1,4 +1,5 @@
 function gridCreation(){
+    delGrid()
     let inputNumber = document.getElementById("myNumber").value
     let $container = document.querySelector(".container");
     let $div 
@@ -30,6 +31,10 @@ function setGridSize(num){
     document.getElementById("container").style.gridTemplateColumns = `repeat(${num}, 1fr)`;
     document.getElementById("container").style.gridTemplateRows = `repeat(${num}, 1fr)`;
 }
+
+function delGrid() {
+    container.innerHTML = "";
+  }
 
 
 
