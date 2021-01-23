@@ -48,7 +48,17 @@ input {
     text-align: center;
     border: 1px solid black;
     border-radius: 3px;
+}
 
+.black {
+    background-color: black;
+}
 
+.randomColor {
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);    
+}
+
+.buttons {
+    font-weight: bolder;
 
 }
