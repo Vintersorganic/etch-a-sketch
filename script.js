@@ -9,6 +9,7 @@ function gridCreation(){
         $container.appendChild($div)
     }
     setGridSize(inputNumber)
+    colorChange();
     
 }
 
@@ -22,15 +23,24 @@ function setGridSize(num){
 
 
  
+function colorChange(){
+
 let color = [, "#3C9EE7", "#E7993C",  
         "#E73C99", "#3CE746", "#E7993C"]; 
+let squares = document.querySelectorAll(".col");
+console.log(squares)
+squares.forEach((square) => {
+
+    
+    square.addEventListener('mouseover', () => {
+        square.style.background = color[Math.floor(Math.random() * color.length)];
+    });
+  });
+
+}
+
+
   
-    document.getElementById("container").addEventListener( 
-            "mouseenter", function () { 
-                  
-        document.querySelector(".col").style.background  
-            = color[Math.floor(Math.random() * color.length)]; 
-    }) 
 
 // function mouseOver() {
 //     document.querySelector(".col").style.color = "blue";
